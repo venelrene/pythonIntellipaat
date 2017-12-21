@@ -30,3 +30,6 @@ print "Total Dog %d" % Dog.dogCount
 
 
 #2. Write a sample Python code to define a function?
+
+def myFunction():
+    print "This is a defined function, or check code above"
