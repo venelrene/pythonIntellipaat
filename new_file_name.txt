@@ -1,0 +1,2 @@
+Hello World!
+Just created a sample Python code to write a file
