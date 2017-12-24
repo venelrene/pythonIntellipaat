@@ -47,7 +47,7 @@ del replicate[6]
 # 7. Write a program to print the current month calendar
 
 import time;
-localtime = time.asctime( time.localtime(time.time()) )
+localtime = time.asctime(time.localtime(time.time()) )
 print "Local current time :", localtime
 
 import calendar
@@ -55,10 +55,25 @@ cal = calendar.month(2017, 1)
 print cal
 
 # 8. Write a program of file handling using following methods:
-# a. rename()
-# b. remove()
-# c. mkdir()
-# d. rmdir()
-# e. getcwd()
+    # a. rename()
+    # b. remove()
+    # c. mkdir()
+    # d. rmdir()
+    # e. getcwd()
+import os
+file_object = open("new_file_name.txt", "wb+")
+file_object.close()
+
+os.rename("new_file_name.txt", "exampleFile.txt")
+
+os.remove("exampleFile.txt")
+
+os.mkdir("newdirToDelete")
+os.rmdir("newdirToDelete")
+
+os.getcwd()
+
 # 9. Write a program by using match function
+
+
 # 10. Write a program using class concept.
