@@ -74,6 +74,23 @@ os.rmdir("newdirToDelete")
 os.getcwd()
 
 # 9. Write a program by using match function
+import re
+line = "Cats are smarter than dogs is proven false"
+match = re.match(r'(.*) are (.*?) .*', line, re.M|re.I)
+print match.group(2)
 
 
 # 10. Write a program using class concept.
+class Dog:
+    dogCount = 1
+    def __init__(self, name, color):
+        self.name = name
+        self.color = color
+        Dog.dogCount += 1
+
+
+    def displayDogCount(self):
+        print "Dog Count %d" % Dog.dogCount
+
+    def displayDog(self):
+        print "Name: ", self.name, ", Color: ", self.color
