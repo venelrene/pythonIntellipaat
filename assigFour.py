@@ -14,7 +14,7 @@ while (count < 3):
     print "Number", count, "is less than the next number"
 
 # 5. Write a program using if else statement
-num =
+num = 1
 if num > 2:
     print "Greater than 2"
 elif num:
@@ -29,10 +29,31 @@ else:
     # b. Replication
     # c. Updation
     # d. Deletion
+list = ["one", "two", "three", 3]
 
+concat = list[0] + " " + list[1]
+print concat
 
+replicate = list * 2
+print replicate
+
+replicate[4] = 1
+replicate[5] = 2
+
+del replicate[4]
+del replicate[5]
+del replicate[6]
 
 # 7. Write a program to print the current month calendar
+
+import time;
+localtime = time.asctime( time.localtime(time.time()) )
+print "Local current time :", localtime
+
+import calendar
+cal = calendar.month(2017, 1)
+print cal
+
 # 8. Write a program of file handling using following methods:
 # a. rename()
 # b. remove()
